@@ -29,6 +29,8 @@ console.log(money)
 
 let result = money * km
 
+result = result.toFixed(2)
+
 console.log(result)
 
 
@@ -47,7 +49,7 @@ const maxDiscount = result * 40 / 100
 
 if (age <= 18) {
 
-    result = result - minDiscount
+    result = result.toFixed(2) - minDiscount
 
     console.log(result)
 }
@@ -56,7 +58,7 @@ if (age <= 18) {
 // SE L'ETA' E' MAGGIORE O UGUALE DI 65 SI PRENDE IL RISULTATO MENO IL MAXDISCOUNT
 
 else if (age >= 65) {
-    result = result - maxDiscount
+    result = result.toFixed(2) - maxDiscount
 
     console.log(result)
 }
